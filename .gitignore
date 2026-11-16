@@ -1,0 +1,13 @@
+node_modules/
+dist/
+public/vendor/
+public/models/*.task
+*.log
+.env
+.env.*
+!.env.example
+tmp/
+release/
+evidence/
+.runtime/
+output/live-review/raw/

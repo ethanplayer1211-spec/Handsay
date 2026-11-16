@@ -1,0 +1,33 @@
+{
+  "name": "handsay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal gesture-to-caption communication prototype with webcam hand tracking.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5417 --strictPort",
+    "build": "vite build",
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:ml": "vitest run src/",
+    "audit:replay": "vitest run --config scripts/replay-audit.config.ts",
+    "test:conversation": "vitest run --config scripts/interview-test.config.ts",
+    "setup:camera": "node scripts/setup-camera.mjs",
+    "setup:desktop": "node scripts/setup-desktop.mjs",
+    "desktop": "node scripts/launch-desktop.mjs",
+    "test:desktop-startup": "node scripts/check-desktop-startup.mjs",
+    "setup:assets": "node scripts/setup-assets.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "1.2.2",
+    "onnxruntime-web": "1.31.1"
+  },
+  "devDependencies": {
+    "electron": "45.3.2",
+    "vite": "8.3.5",
+    "vitest": "5.1.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

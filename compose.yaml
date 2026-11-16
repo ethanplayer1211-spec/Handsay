@@ -1,0 +1,26 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    expose:
+      - '5417'
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 512m
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '443:443'
+    environment:
+      HANDSAY_DOMAIN: ${HANDSAY_DOMAIN:?Set HANDSAY_DOMAIN to your domain}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on: [app]
+volumes:
+  caddy_data:
+  caddy_config:
