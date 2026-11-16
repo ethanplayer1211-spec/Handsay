@@ -2,6 +2,7 @@
 from pathlib import Path
 import hashlib,json,shutil,zipfile,math
 ROOT=Path(__file__).resolve().parent.parent
+code_url='https://github.com/ethanplayer1211-spec/Handsay'
 out=ROOT/'release/Handsay-Veritas';out.mkdir(parents=True,exist_ok=True)
 film=ROOT/'output/demo-film-v6'
 duration=math.ceil(float(json.loads((film/'verification.json').read_text())['format']['duration']))
@@ -19,18 +20,17 @@ files={
 for name,source in files.items():shutil.copy2(ROOT/source,out/name)
 (out/'START_HERE.txt').write_text('''HANDSay - VERITAS SUBMISSION MATERIALS
 
-Prepared locally. Nothing has been uploaded, published or submitted.
+Prepared for review. Source code is public; video hosting and form submission
+remain for the owner. Code Link: CODE_URL
 
 1. Watch Handsay-demo.mp4 (VIDEO_DURATION). Original app captions are inside the footage;
    male narration subtitles are below it. The face blur is light, not anonymization.
 2. Use Handsay-writeup.pdf as the one-page write-up. Its editable source is the
    Markdown file. SeHyun Lee is listed as the contributing student. Enter your
    email and school in the form; those details have not been invented.
-3. Extract handsay-source-v0.1.zip and publish the reviewed project to an accessible
-   GitHub repository, or another code destination allowed by the event. A local
-   ZIP alone does not meet the public-code-link requirement. Include source/data
-   licences and AI assistance disclosure. Do not publish raw camera recordings,
-   local preferences, node_modules, .runtime, temporary files or credentials.
+3. Paste CODE_URL into the Code Link field. The reviewed source ZIP is also
+   included for your records. Source/data licences and AI assistance disclosure
+   are included. Original recordings, saved gestures and credentials are excluded.
 4. Supply the code link and write-up in the official submission form. Optional
    video credits and the honest editing/accuracy description are in
    VIDEO_DESCRIPTION.txt. Use AI + Health / own idea; enter one track.
@@ -48,9 +48,9 @@ Local app: close old Handsay windows, reopen Start-Handsay.cmd in the project,
 choose ASL + My gestures / shortcuts first, and verify your saved phrases.
 Voice into a third-party call needs separate audio routing; universal client
 compatibility is not established. The public caption room needs secure hosting.
-'''.replace('VIDEO_DURATION',time_label),encoding='utf-8')
+'''.replace('VIDEO_DURATION',time_label).replace('CODE_URL',code_url),encoding='utf-8')
 manifest={name:{'bytes':(out/name).stat().st_size,'sha256':hashlib.sha256((out/name).read_bytes()).hexdigest()} for name in [*files,'START_HERE.txt']}
-(out/'manifest.json').write_text(json.dumps({'uploaded':False,'submitted':False,'independentLiveAccuracy':'unverified','files':manifest},indent=2)+'\n',encoding='utf-8')
+(out/'manifest.json').write_text(json.dumps({'codePublished':True,'codeLink':code_url,'videoUploaded':False,'submitted':False,'independentLiveAccuracy':'unverified','files':manifest},indent=2)+'\n',encoding='utf-8')
 archive=ROOT/'release/Handsay-Veritas-submission.zip'
 with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=7) as z:
  for p in sorted(out.iterdir()):
