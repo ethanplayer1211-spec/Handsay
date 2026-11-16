@@ -1,0 +1,85 @@
+HANDSay - COPY-READY SUBMISSION ANSWERS
+
+PROJECT NAME
+Handsay
+
+TRACK
+AI + Health / Own idea
+
+CONTRIBUTING STUDENT
+SeHyun Lee
+
+EMAIL AND SCHOOL
+Enter your own email and school in the form. These have not been invented or filled.
+
+SHORT DESCRIPTION
+Handsay helps people with speech difficulties take part in calls, interviews and
+everyday conversations. A webcam recognizes supported individual ASL words, while
+personal gestures trigger phrases chosen by the user. Captions can be reviewed,
+edited and read aloud using a device voice. Typed answers and quick messages
+provide a fallback. It is a research prototype, not continuous ASL translation.
+
+PROBLEM
+Speaking is often treated as the default in calls and interviews. People who have
+difficulty speaking can struggle to join jokes, answer questions and show their
+abilities at their own pace. The goal is to offer another way to participate
+without requiring everyone else to understand sign language.
+
+METHOD
+No wearable sensors: MediaPipe estimates face, body and hand coordinates. Motion
+detection groups frames into signs; jitter handling and gap recovery stabilize
+capture. The reused GestureSign ONNX model classifies 250 isolated ASL signs.
+Personal shortcuts match recorded examples to a chosen sentence. Browser speech
+reads the text. We did not train the base model; inference runs locally.
+
+RESULTS / FAILURES
+The owner demo shows ASL Hello and a personal gesture producing captions.
+On six author-selected upstream test-signer clips, constant Hello matched 1/6
+labels and raw model output matched 5/6. Careful filtering accepted 3 correct and
+1 wrong caption, holding back 2 correct predictions. We verified pinned model,
+clip and test-signer export provenance. The clips were also used during app
+work, so these are regression results, not untouched filter or live evaluation.
+254 software tests pass. Tracking can be overly sensitive or miss motion;
+custom gestures can conflict with ASL. Independent live accuracy is unverified.
+
+NEXT STEPS
+Stabilize motion boundaries, reduce personal-gesture/ASL conflicts, and test with
+fluent signers and non-sign movements. Improve and verify camera/audio routing
+for Zoom, Google Meet and Teams. General call-client compatibility is not proven.
+
+AI ASSISTANCE DISCLOSURE
+OpenAI Codex provided substantial implementation, debugging, test/evaluation
+tooling and drafting under my direction. I am responsible for reviewing,
+understanding and explaining the project. The base model and reused code are
+credited to GestureSign, not presented as my own model training.
+
+HEALTH DISCLAIMER
+This project is a prototype and is not medical advice.
+
+CREDITS / SOURCE LINKS
+GestureSign / Shashank Yadav - pretrained model, preprocessing, reused code/tests (MIT)
+https://github.com/shashank11yadav/GestureSign
+Google / PopSign ASL Signs - model data and bundled landmarks (CC BY 4.0 upstream)
+https://www.kaggle.com/competitions/asl-signs
+MediaPipe - camera landmark tracking
+https://ai.google.dev/edge/mediapipe/solutions/vision/holistic_landmarker
+ONNX Runtime - browser model inference
+https://onnxruntime.ai/
+OpenAI Codex - substantial implementation, testing and drafting assistance
+https://openai.com/codex/
+Google Meet - interface reference
+https://workspace.google.com/products/meet/
+edge-tts / Microsoft Guy - stock synthetic male video narration, not a clone
+https://github.com/rany2/edge-tts
+
+WHAT TO ATTACH OR LINK
+Write-up: attach Handsay-writeup.pdf, or use an accessible README/Google Doc.
+Code Link: https://github.com/ethanplayer1211-spec/Handsay
+Write-up Link (alternative to attaching PDF):
+https://github.com/ethanplayer1211-spec/Handsay/blob/main/docs/VERITAS_WRITEUP.md
+Video: use the approved Handsay-demo.mp4. If the field asks for a URL, upload it
+as unlisted YouTube or viewable-with-link Google Drive, then paste that link.
+The original recording and raw review frames are excluded from the source ZIP.
+
+The code repository is public. The video has not been uploaded and the form
+has not been submitted by the assistant.

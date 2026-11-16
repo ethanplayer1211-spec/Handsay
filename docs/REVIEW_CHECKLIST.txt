@@ -1,0 +1,21 @@
+HANDSay - FINAL OWNER REVIEW
+
+1. Open Handsay-writeup.pdf. Check the purpose matches your idea, your name is
+   SeHyun Lee, and the results/limitations describe the prototype honestly.
+2. Keep the approved 1:02 video. It is unchanged in this package.
+3. Close old Handsay windows and reopen Start-Handsay.cmd to load the polish.
+   Check a supported Hello, wait five seconds, then try your trained shortcut.
+   The shortcut should be a separate message. Correct any mistaken caption.
+4. If you want speech, select/preview the available male device voice, then
+   check the message with Read aloud. This plays locally; call audio routing
+   is a separate requirement. Do not assume every call app is verified.
+5. Use FORM_ANSWERS.txt for the project description, method, results, next steps,
+   AI disclosure and source links. Fill your own email and school in the form.
+6. Paste this public repository URL into Code Link:
+   https://github.com/ethanplayer1211-spec/Handsay
+7. If the optional video field requires a URL, upload the approved MP4 as an
+   unlisted YouTube video or viewable-with-link Drive file, then paste its URL.
+8. Open submitted links without signing in. Review the form before submitting.
+
+The code is publicly available. Video hosting and the submission form remain
+for the owner to complete. Original recordings and saved gestures are excluded.
