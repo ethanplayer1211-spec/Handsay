@@ -1,0 +1,79 @@
+{
+  "generatedAt": "2026-11-16T00:45:20.990Z",
+  "scope": "Actual ONNX inference on three recorded isolated-sign clips arranged as one stream, with synthetic pauses and optional 100 ms hand-coordinate losses. Input supplied directly as landmarks, bypassing image tracking. References never enter the classifier. Queued finals are deliberately resolved after later signs start. Not human, unseen-signer, or continuous-ASL accuracy.",
+  "timing": {
+    "gapMs": 650,
+    "stillMs": 700,
+    "holdTailMs": 250,
+    "recoverMs": 100,
+    "maxMs": 10000,
+    "prerollMs": 500,
+    "stabilizeMotion": true
+  },
+  "rows": [
+    {
+      "dropouts": false,
+      "reference": [
+        "hello",
+        "police",
+        "giraffe"
+      ],
+      "captures": 3,
+      "results": [
+        {
+          "word": "hello",
+          "score": 0.9042160114219797,
+          "current": false,
+          "partial": false,
+          "durationMs": 800.0000000000002
+        },
+        {
+          "word": "police",
+          "score": 0.8387901146533744,
+          "current": false,
+          "partial": false,
+          "durationMs": 1266.6666666666674
+        },
+        {
+          "word": "giraffe",
+          "score": 0.8773644746001632,
+          "current": true,
+          "partial": false,
+          "durationMs": 1199.9999999999977
+        }
+      ]
+    },
+    {
+      "dropouts": true,
+      "reference": [
+        "hello",
+        "police",
+        "giraffe"
+      ],
+      "captures": 3,
+      "results": [
+        {
+          "word": "hello",
+          "score": 0.9306032344750474,
+          "current": false,
+          "partial": false,
+          "durationMs": 800.0000000000002
+        },
+        {
+          "word": "police",
+          "score": 0.7974741917573402,
+          "current": false,
+          "partial": false,
+          "durationMs": 1266.6666666666674
+        },
+        {
+          "word": "giraffe",
+          "score": 0.8643975281600054,
+          "current": true,
+          "partial": false,
+          "durationMs": 733.3333333333289
+        }
+      ]
+    }
+  ]
+}

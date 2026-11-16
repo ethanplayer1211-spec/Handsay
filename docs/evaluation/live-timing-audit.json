@@ -1,0 +1,105 @@
+{
+  "generatedAt": "2026-11-16T00:45:21.440Z",
+  "scope": "Selected upstream recorded landmarks, extended with a synthetic final-pose hold. Live timing integration check only; not live-signer or held-out accuracy. No good or good-morning test clip is available in this bundle.",
+  "timing": {
+    "gapMs": 650,
+    "stillMs": 700,
+    "holdTailMs": 250,
+    "recoverMs": 100,
+    "maxMs": 10000,
+    "prerollMs": 500,
+    "stabilizeMotion": true
+  },
+  "rows": [
+    {
+      "reference": "blue",
+      "completedSegments": 1,
+      "results": [
+        {
+          "predicted": "blue",
+          "score": 0.7543313445469102,
+          "durationMs": 1533.3333333333335,
+          "firstT": 0,
+          "lastT": 1533.3333333333335,
+          "partial": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "reference": "police",
+      "completedSegments": 1,
+      "results": [
+        {
+          "predicted": "police",
+          "score": 0.9306341503799526,
+          "durationMs": 900.0000000000001,
+          "firstT": 0,
+          "lastT": 900.0000000000001,
+          "partial": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "reference": "quiet",
+      "completedSegments": 1,
+      "results": [
+        {
+          "predicted": "shh",
+          "score": 0.936047763328634,
+          "durationMs": 1100,
+          "firstT": 0,
+          "lastT": 1100,
+          "partial": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "reference": "giraffe",
+      "completedSegments": 1,
+      "results": [
+        {
+          "predicted": "giraffe",
+          "score": 0.8773644746001632,
+          "durationMs": 1200,
+          "firstT": 0,
+          "lastT": 1200,
+          "partial": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "reference": "smile",
+      "completedSegments": 1,
+      "results": [
+        {
+          "predicted": "napkin",
+          "score": 0.2616240072126134,
+          "durationMs": 1033.3333333333335,
+          "firstT": 0,
+          "lastT": 1033.3333333333335,
+          "partial": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "reference": "hello",
+      "completedSegments": 1,
+      "results": [
+        {
+          "predicted": "hello",
+          "score": 0.9042160114219797,
+          "durationMs": 800,
+          "firstT": 0,
+          "lastT": 800,
+          "partial": false
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

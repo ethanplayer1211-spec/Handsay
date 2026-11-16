@@ -1,0 +1,33 @@
+{
+  "updated": "2026-11-16",
+  "softwareTests": {
+    "mlClient": 198,
+    "applicationBackend": 42,
+    "total": 240
+  },
+  "productionBuild": true,
+  "modelReplayChecks": 3,
+  "simulatedInterview": true,
+  "cleanCaptionBrowserCheck": {
+    "testText": "Good morning.",
+    "typedExampleNotRecognition": true,
+    "labelHidden": true,
+    "provisionalHidden": true,
+    "progressOverlayHidden": true,
+    "combinedOptionSelected": true,
+    "consoleErrors": 0
+  },
+  "physicalCameraOpenedByAssistant": false,
+  "input": "Owner-supplied screen recording; local processing only",
+  "clip": {
+    "startSecond": 315,
+    "endSecond": 327,
+    "durationSeconds": 12,
+    "continuousExcerpt": true,
+    "faceBlurred": true,
+    "unconfirmedCaptionPreviewRemoved": true,
+    "acceptedWordsUnchanged": true
+  },
+  "liveRetestRequired": true,
+  "limits": "Compressed screen footage with baked-in landmark drawings is not raw-camera accuracy validation. Owner footage predates the latest app fixes."
+}

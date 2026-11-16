@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-11-15T23:32:01.219217+00:00",
+  "tests": {
+    "mlClient": 203,
+    "applicationBackend": 51,
+    "total": 254,
+    "realModelReplay": 3,
+    "personalBoundaryIntegration": 1,
+    "simulatedInterview": 1
+  },
+  "productionBuild": true,
+  "browser": {
+    "exactChosenCaptions": true,
+    "lightDark": true,
+    "recognitionModeSurvivesReload": true,
+    "demoKeepsRecognitionMode": true,
+    "editingLeavesDemoAndClearsItsOutput": true,
+    "consoleErrors": 0,
+    "physicalCameraOpened": false,
+    "microphoneOpened": false,
+    "conversationEntryCopy": true,
+    "activeModeBadge": true,
+    "untrainedPersonalGuidance": true,
+    "ownerFormBrowserAccessed": false
+  },
+  "video": {
+    "revision": "v6 chronological walkthrough",
+    "durationSeconds": 61.521333,
+    "sha256": "93349ea9af49ef58fe251380b69d7d58fae192e57b7d6a4e66907e0a12cb956b",
+    "source": "Second owner recording; complete chosen phrase setup/training/test sequence before extra features",
+    "neutralFirst": true,
+    "realPhraseTyping": true,
+    "fiveRecordedTakesShown": true,
+    "liveShortcutTestShown": true,
+    "originalCaptionPixelsPreserved": true,
+    "captionAreasSeparate": true,
+    "darkThemeThroughout": true,
+    "faceBlur": "Light; Hello hand protected; library text untouched; not anonymization",
+    "maleSyntheticNarration": true,
+    "fullDecodePassed": true,
+    "integratedLufs": -15.99,
+    "peakDbtp": -1.48,
+    "visuallyReviewedCheckpoints": 16,
+    "approvedVideoUnchanged": true
+  },
+  "writeup": {
+    "onePagePdf": true,
+    "visualReviewPassed": true,
+    "studentNameIncluded": true,
+    "linkedCredits": true
+  },
+  "independentSignerAccuracy": "unverified; owner confirmed no fluent tester available",
+  "published": false,
+  "submitted": false,
+  "remaining": [
+    "Owner review of PDF and local app",
+    "Enter email and school in form",
+    "Upload video if a URL is required",
+    "Review and submit form"
+  ],
+  "mediaCheckedAt": "2026-11-15T23:54:40.208095+00:00",
+  "owner": "SeHyun Lee",
+  "ownerReviewPreparedAt": "2026-11-16T00:49:13.572942+00:00",
+  "evaluationProvenance": {
+    "checked": true,
+    "file": "data-provenance.json",
+    "baseModelReplaySource": "verified upstream held-out test signers",
+    "scope": "six selected development regression clips; live accuracy unverified"
+  },
+  "codeRepository": "https://github.com/ethanplayer1211-spec/Handsay",
+  "codePublished": true,
+  "appPubliclyHosted": false
+}

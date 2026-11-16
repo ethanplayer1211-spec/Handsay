@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-15T17:57:36.808656+00:00",
+  "localDateMYT": "2026-11-16",
+  "build": true,
+  "mlAndClientTests": 157,
+  "applicationTests": 42,
+  "realModelReplayChecks": 3,
+  "scriptedInterviewCheck": true,
+  "hiddenDesktopStartupAndPreferencesCheck": true,
+  "npmAuditKnownVulnerabilities": 0,
+  "browserChecks": {
+    "unsentDraftPrivate": true,
+    "liveSharingDefaultOff": true,
+    "voiceDefaultOff": true,
+    "confirmedCaptionDelivered": true,
+    "questionDelivered": true,
+    "demoWordsNotShared": true,
+    "endInvalidatesReaderRoom": true,
+    "readerQuestionDisabledAfterEnd": true,
+    "capturedWarningOrErrorLogs": []
+  },
+  "physicalWebcamOpenedByAssistant": false,
+  "realCallAppsTested": false,
+  "limits": [
+    "Software failure recovery and selected replay checks do not prove signing accuracy.",
+    "Physical webcam, optional head controls, speech audibility and the receiving call app require user testing.",
+    "Unrestricted continuous ASL translation remains unsupported.",
+    "Old Chromium session settings were not migrated; new desktop preferences use a stable private store."
+  ]
+}

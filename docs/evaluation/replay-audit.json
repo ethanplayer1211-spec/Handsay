@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-11-16T00:45:20.768Z",
+  "scope": "Six author-selected clips exported from upstream held-out test signers; pinned artefact/split/export provenance is checked in data-provenance.json. These are app regression examples, not representative or independent live-camera accuracy.",
+  "provenance": "data-provenance.json",
+  "baseline": "Always predict hello. This is a deliberately simple constant baseline, not a majority-class estimate for the full dataset.",
+  "data": "Google / PopSign ASL Signs via GestureSign bundled replay data",
+  "count": 6,
+  "baselineCorrect": 1,
+  "rawModelCorrect": 5,
+  "carefulAccepted": 4,
+  "carefulIncorrectAccepted": 1,
+  "carefulCorrectHeldBack": 2,
+  "rows": [
+    {
+      "id": "asl-876407620",
+      "expected": "blue",
+      "baseline": "hello",
+      "baselineCorrect": false,
+      "predicted": "blue",
+      "correct": true,
+      "modelScore": 0.7515667877337855,
+      "acceptedByCarefulFilter": false,
+      "filterReason": "Uncertain word held back — choose a suggestion or sign it again."
+    },
+    {
+      "id": "asl-658703036",
+      "expected": "police",
+      "baseline": "hello",
+      "baselineCorrect": false,
+      "predicted": "police",
+      "correct": true,
+      "modelScore": 0.9189998180517767,
+      "acceptedByCarefulFilter": true,
+      "filterReason": "Added to live captions."
+    },
+    {
+      "id": "asl-1993938790",
+      "expected": "quiet",
+      "baseline": "hello",
+      "baselineCorrect": false,
+      "predicted": "shh",
+      "correct": false,
+      "modelScore": 0.9458481801709068,
+      "acceptedByCarefulFilter": true,
+      "filterReason": "Added to live captions."
+    },
+    {
+      "id": "asl-1744637309",
+      "expected": "giraffe",
+      "baseline": "hello",
+      "baselineCorrect": false,
+      "predicted": "giraffe",
+      "correct": true,
+      "modelScore": 0.853975738117151,
+      "acceptedByCarefulFilter": true,
+      "filterReason": "Added to live captions."
+    },
+    {
+      "id": "asl-3449929079",
+      "expected": "smile",
+      "baseline": "hello",
+      "baselineCorrect": false,
+      "predicted": "smile",
+      "correct": true,
+      "modelScore": 0.3538553122073328,
+      "acceptedByCarefulFilter": false,
+      "filterReason": "Uncertain word held back — choose a suggestion or sign it again."
+    },
+    {
+      "id": "asl-142292689",
+      "expected": "hello",
+      "baseline": "hello",
+      "baselineCorrect": true,
+      "predicted": "hello",
+      "correct": true,
+      "modelScore": 0.9294261127438154,
+      "acceptedByCarefulFilter": true,
+      "filterReason": "Added to live captions."
+    }
+  ],
+  "limitations": [
+    "Not a randomly sampled test set; used during app development.",
+    "No adult, fluent-signer, disability or demographic validation.",
+    "No non-sign negative dataset, so no general false-alarm rate can be reported.",
+    "Caption filtering can reject correct words; acceptance scores are not measured accuracy."
+  ]
+}

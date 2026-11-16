@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-11-15T23:26:37.183Z",
+  "kind": "Scripted AI-role simulation; no human participant or generated signing avatar",
+  "passed": true,
+  "questions": 4,
+  "answers": 4,
+  "rows": [
+    {
+      "question": "Please greet me.",
+      "reference": "hello",
+      "rawPrediction": "hello",
+      "acceptedByFilter": true,
+      "review": "accepted word reviewed before send",
+      "delivered": "Hello"
+    },
+    {
+      "question": "Which colour are you showing?",
+      "reference": "blue",
+      "rawPrediction": "blue",
+      "acceptedByFilter": false,
+      "review": "scripted selection of held-back correct word",
+      "delivered": "Blue"
+    },
+    {
+      "question": "What do you mean by that sign?",
+      "reference": "quiet",
+      "rawPrediction": "shh",
+      "acceptedByFilter": true,
+      "review": "scripted correction using dataset reference",
+      "delivered": "Quiet"
+    },
+    {
+      "question": "Would you like more time?",
+      "reference": null,
+      "rawPrediction": null,
+      "acceptedByFilter": null,
+      "review": "typed fallback",
+      "delivered": "Please give me a moment to answer."
+    }
+  ],
+  "checks": [
+    "question delivered to signer",
+    "reviewed answer delivered to interviewer",
+    "uncertain sign reviewed",
+    "confident label mismatch corrected using known reference",
+    "typed fallback",
+    "duplicate send idempotency",
+    "ending invalidates room"
+  ],
+  "limitations": [
+    "Selected recorded landmark clips, not live webcam capture.",
+    "Scripted review uses known dataset references, not autonomous ASL understanding.",
+    "Does not establish real-human usability, signing accuracy or performance in any third-party call app."
+  ]
+}

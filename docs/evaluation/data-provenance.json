@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-11-16T00:51:04.767Z",
+  "passed": true,
+  "commit": "ffc0578e68449676b6e9545da82092679914e8c8",
+  "files": [
+    {
+      "local": "public/models/model.onnx",
+      "upstream": "web/public/models/model.onnx",
+      "gitBlob": "4cdac8c0feabfebe651f5d59dfd5ea65a9ea9934",
+      "expectedGitBlob": "4cdac8c0feabfebe651f5d59dfd5ea65a9ea9934",
+      "matched": true,
+      "normalization": "None",
+      "source": "https://github.com/shashank11yadav/GestureSign/blob/ffc0578e68449676b6e9545da82092679914e8c8/web/public/models/model.onnx"
+    },
+    {
+      "local": "public/replay/clips.json",
+      "upstream": "web/public/replay/clips.json",
+      "gitBlob": "b6c1bb1c9b713e87987d7fecf02c4687550a6511",
+      "expectedGitBlob": "b6c1bb1c9b713e87987d7fecf02c4687550a6511",
+      "matched": true,
+      "normalization": "Single final LF; all other bytes unchanged",
+      "source": "https://github.com/shashank11yadav/GestureSign/blob/ffc0578e68449676b6e9545da82092679914e8c8/web/public/replay/clips.json"
+    },
+    {
+      "local": "public/models/model-meta.json",
+      "upstream": "web/public/models/model-meta.json",
+      "gitBlob": "59f3ce319e2fccb81ef5b1c3996efce92c3bb722",
+      "expectedGitBlob": "59f3ce319e2fccb81ef5b1c3996efce92c3bb722",
+      "matched": true,
+      "normalization": "Single final LF; all other bytes unchanged",
+      "source": "https://github.com/shashank11yadav/GestureSign/blob/ffc0578e68449676b6e9545da82092679914e8c8/web/public/models/model-meta.json"
+    }
+  ],
+  "testParticipants": [
+    16069,
+    37055,
+    61333
+  ],
+  "sourceCodeEvidence": [
+    {
+      "path": "pipeline/configs/default.toml",
+      "lines": "19-24",
+      "gitBlob": "603dc3aef8f3e48f4126623e348a3b513a18ccb0",
+      "finding": "The configured test participants are 16069, 37055 and 61333."
+    },
+    {
+      "path": "pipeline/src/gesturesign/prepare.py",
+      "lines": "238-245",
+      "gitBlob": "c1984fc4f92db2e5ac49a5cd394bc48994ed566e",
+      "finding": "Training excludes both test and validation participant masks."
+    },
+    {
+      "path": "pipeline/src/gesturesign/replay.py",
+      "lines": "95-134",
+      "gitBlob": "2940adcb1301a0657a3d9c0fdd8b63f509f8bfd8",
+      "finding": "Real replay candidates are restricted to test participants before six examples are selected."
+    }
+  ],
+  "conclusion": "The six bundled clips have verified upstream held-out-signer provenance for the shipped base model, based on pinned exporter/split code and matching shipped artefacts.",
+  "limitations": [
+    "Six author-selected clips; not a representative sample.",
+    "The upstream training run and original Kaggle archive were not independently reproduced.",
+    "These clips have been used during Handsay development, so they are regression examples, not an untouched test of the app filters.",
+    "No fluent live signer, general non-sign false-alarm or demographic validation."
+  ]
+}

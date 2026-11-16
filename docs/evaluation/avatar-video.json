@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-16",
+  "kind": "recorded-landmark avatar/model replay; not live image tracking",
+  "file": "output/video/Handsay-avatar-demo.mp4",
+  "durationSeconds": 14.25,
+  "width": 1280,
+  "height": 720,
+  "fps": 20,
+  "frames": 285,
+  "codec": "h264",
+  "bytes": 368941,
+  "audioStreams": 0,
+  "webcamOpened": false,
+  "microphoneOpened": false,
+  "syntheticDropouts": false,
+  "results": [
+    {"prediction": "hello", "roundedScorePercent": 90, "acceptedInDemo": false},
+    {"prediction": "police", "roundedScorePercent": 84, "acceptedInDemo": true},
+    {"prediction": "giraffe", "roundedScorePercent": 88, "acceptedInDemo": true}
+  ],
+  "verification": ["browser download", "ffprobe stream inspection", "visual inspection of introduction, signing and limits frames"],
+  "limits": "Selected upstream demo motions. No held-out/live human accuracy or call-client compatibility measurement."
+}

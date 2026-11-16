@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-15T19:04:34.689394+00:00",
+  "localDateMYT": "2026-11-16",
+  "mlAndClientTests": 173,
+  "applicationTests": 42,
+  "realModelReplayChecks": 3,
+  "productionBuild": true,
+  "controlledCases": [
+    "stationary jitter at 15/30/60 fps",
+    "settling after movement at 15/30/60 fps",
+    "independent small joint/depth noise",
+    "one-frame spike",
+    "3D palm rotation with stationary wrist",
+    "returning palm rotation",
+    "finger articulation",
+    "tracker-side reassignment",
+    "early tracking loss preserves lead-in",
+    "preview starts using current-frame context"
+  ],
+  "modelInputFiltered": false,
+  "automaticCaptionThresholdsLowered": false,
+  "physicalWebcamTestPerformed": false,
+  "limits": "Controlled motion and selected recorded-landmark checks are not human-camera, rotated-palm vocabulary or continuous-ASL accuracy measurements."
+}

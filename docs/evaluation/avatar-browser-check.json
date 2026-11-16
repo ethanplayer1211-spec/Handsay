@@ -1,0 +1,30 @@
+{
+  "recordedAt": "2026-11-15T12:30:45.234534+00:00",
+  "method": "Background browser UI observation, actual MediaPipe tracking worker on 12 code-rendered flat silhouette images; no camera permission or physical webcam used.",
+  "handsFrames": 0,
+  "bodyFrames": 0,
+  "totalFrames": 12,
+  "wordRecognitionEvaluated": false,
+  "reason": "Insufficient tracked hands. Landmark-driven avatar replay is a separate test that bypasses image tracking.",
+  "observedDemoCaption": "hello ? police ? giraffe",
+  "demoResults": [
+    {
+      "word": "hello",
+      "displayedModelScorePercent": 93,
+      "gate": "held for review"
+    },
+    {
+      "word": "police",
+      "displayedModelScorePercent": 67,
+      "gate": "held for review"
+    },
+    {
+      "word": "giraffe",
+      "displayedModelScorePercent": 91,
+      "gate": "added in private demo"
+    }
+  ],
+  "testDraftPreserved": true,
+  "capturedConsoleWarningsOrErrors": [],
+  "limits": "Synthetic diagnostic, not human-camera or continuous-ASL accuracy."
+}

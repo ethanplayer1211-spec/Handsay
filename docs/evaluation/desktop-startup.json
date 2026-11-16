@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-11-15T19:29:35.468Z",
+  "passed": true,
+  "primaryStartup": true,
+  "healthCheck": true,
+  "secondLaunchForwarded": true,
+  "cacheErrors": false,
+  "httpDiskCache": false,
+  "sessionDirectoryUnique": true,
+  "preferencesBridge": true,
+  "scope": "Real Electron hidden startup, actual renderer preference write through the sandboxed bridge, and duplicate-launch check; no camera or UI input."
+}
