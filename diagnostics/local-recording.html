@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Handsay local recording diagnostic</title>
+<style>body{font:16px/1.5 Arial;margin:30px;max-width:1100px;background:#f8fafd;color:#202124}label{display:inline-block;margin:10px}button,a{padding:12px;margin:12px}video{width:500px}canvas{width:500px}pre{white-space:pre-wrap}</style>
+<h1>Local recorded-video diagnostic</h1><p>This reads a selected file locally. No webcam, microphone or upload. A screen recording with landmark drawings is not a raw-camera accuracy test.</p>
+<input id="file" type="file" accept="video/*" aria-label="Local video file"><br>
+<label>Start second <input id="start" type="number" value="310"></label><label>End second <input id="end" type="number" value="335"></label>
+<button id="run">Analyze selected recording</button><a id="download" hidden>Download private tracking data</a>
+<pre id="status">Choose a local video.</pre><video id="video" controls muted></video><canvas id="crop" width="720" height="480"></canvas><script type="module" src="./recording-review.ts"></script></html>
